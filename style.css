@@ -38,6 +38,7 @@ display: block;
 }
 .logo img{
     height: 58px;
+    
 }
 
 .logo span{
@@ -77,4 +78,14 @@ display: block;
     font-size: 14px;
     color:blue;
     text-decoration: none;
+}
+
+.search{
+    top: 32px;
+left: 291px;
+width: 16px;
+height: 16px;
+
+background: white 0% 0% no-repeat padding-box;
+opacity: 1;
 }
