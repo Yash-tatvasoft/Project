@@ -1,0 +1,15 @@
+.sidebar{
+    max-height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid black;
+    padding: 20px 10px;
+}
+
+.sidebar-menu .nav-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 8px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
