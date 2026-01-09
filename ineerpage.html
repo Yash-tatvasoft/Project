@@ -27,7 +27,8 @@
             <div class="input-group">
 
                 <span class="input-group-text bg-white border-end-0">
-                    <img src="/HTML Training Assignment/images/Assigment_Assets/search-icon.svg" class="nav-icon">
+                    <img src="/HTML Training Assignment/images/Assigment_Assets/search-icon.svg" height="16px"
+                        width="16px" class="nav-icon">
                 </span>
                 <input type="search" class="form-control border-start-0" placeholder="Search">
 
@@ -49,7 +50,8 @@
             <div class="col-md-2 sidebar border-0">
                 <ul class="nav flex-column sidebar-menu">
                     <li class="nav-item active">
-                        <img src="/HTML Training Assignment/images/Assigment_Assets/dashboard-default.svg" height="30px">
+                        <img src="/HTML Training Assignment/images/Assigment_Assets/dashboard-default.svg"
+                            height="30px">
                         <span>Dashboard</span>
                     </li>
                     <li class="nav-item">
@@ -79,30 +81,186 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-10 p-0 justify-content-between " style="background-color: #F8F8F8;">
-                <h2 class="mb-10">Analysis</h2><br>
-                <div class="mb-3">
 
-                    <label for="exampleFormControlInput1" class="form-label" style="font-size: large;;"><strong> One
-                            column</strong></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name"><br>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>dropdown</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+            <!-- main content -->
+            <div class=" container-fluid col-md-10  justify-content-between " style="background-color: #F8F8F8;">
+                <h2 class="">Analysis</h2><br>
+                <div class="container p-4 bg-white" >
+                    <div class="card border-0" style="margin-bottom: 30px;">
+
+                        <h6 class="fw-semibold pt-4 fw-semibold fs-4">One Column</h6>
+                        <input type="text" class="form-control mb-3" placeholder="Name">
+                        <select class="form-select mb-3">
+                            <option selected>Dropdown</option>
+                        </select>
+                        <textarea class="form-control" rows="5" placeholder="Multiple line"></textarea>
+                    </div>
+
+                    <div class="card border-0">
+                        <h6 class="fw-semibold pt-4 fw-semibold fs-4">Two Column</h6>
+                        <div class="row">
+                            <div class="col-md-6 justify-content-between " >
+                                 <input type="text" class="form-control mb-3" placeholder="Name">
+                            </div>
+                            <div class="col-md-6 justify-content-between ">
+                                 <input type="text" class="form-control mb-3" placeholder="john doe">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 justify-content-between ">
+                                
+                                <input type="password" class="form-control mb-3" placeholder="Password">
+                            </div>
+                            <div class="col-md-6  justify-content-between ">
+                                
+                                <select class="form-select mb-3">
+                                    <option selected>Dropdown</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <h6 class="fw-semibold pt-4 fw-semibold fs-4"   >Three Column</h6>
+                        <div class="row">
+                            <div class="col-md-4   justify-content-between ">
+                                
+                                <input type="text" class="form-control mb-3" placeholder="Name">
+                            </div>
+                            <div class="col-md-4  justify-content-between " >
+                                
+                                <input type="text" class="form-control mb-3" placeholder="john doe">
+                            </div>
+                            <div class=" col-md-4  justify-content-between " >
+                                
+                                <input type="text" class="form-control mb-3 " placeholder="john doe">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0">
+                        <h6 class="fw-semibold pt-4 fw-semibold fs-4" style="margin-top: 10px;" >Four Column</h6>
+                        <div class="row">
+                            <div class="col-md-3   justify-content-between ">
+                                <input type="text" class="form-control mb-3" placeholder="Name">
+                            </div>
+                            <div class="col-md-3   justify-content-between ">
+                                <input type="text" class="form-control mb-3" placeholder="Name">
+                            </div>
+                            <div class="col-md-3   justify-content-between ">
+                                 <input type="text" class="form-control mb-3" placeholder="Name">
+                            </div>
+                            <div class="col-md-3  justify-content-between ">
+                                <select class="form-select mb-3">
+                                    <option selected>Dropdown</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <h6 class="fw-semibold pt-4 fw-semibold fs-4">Other Design Elements</h6>
+                    <div class="md-4"></div>
+                    <label class="form-label fw-semibold fs-5">File upload</label><br>
+                    <label class="upload-btn">
+                        <div class="upload-file d-flex justify-content-center align-items-center">
+                            <img src="/HTML Training Assignment/images/Assigment_Assets/cloud-upload-icon.svg"
+                                class="me-2" alt="">Upload<input type="file" hidden><br>
+                        </div>
+                    </label>
+                    <span class="ms-2 text-muted small">No item selected</span>
+
+                    <h6 class="fw-semibold fw-semibold fs-5 mt-4">Radio Button</h6>
+                    <div class="md-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1"> option 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2" checked>
+                            <label class="form-check-label" for="inlineRadio2"> option 2</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold fs-5 ">Checkbox</label><br>
+                        <input type="checkbox" id="c1" class="option">
+                        <label for="c1" class="me-3">Option 1</label>
+
+                        <input type="checkbox" id="c2" checked class="option">
+                        <label for="c2">Option 2</label>
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <label class="form-label fw-semibold fs-5">Snackbar</label><br>
+                        <div class="col-md-6">
+                            <div class="snackbar error "> <img
+                                    src="/HTML Training Assignment/images/Assigment_Assets/error-icon.svg" alt=""
+                                    class="error-icon" style="width: 30px;"> This is an error message</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="snackbar info"><img
+                                    src="/HTML Training Assignment/images/Assigment_Assets/info-icon.svg" alt=""
+                                    class="info-icon " style="width: 30px;"> This is an information message</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="snackbar warning"><img
+                                    src="/HTML Training Assignment/images/Assigment_Assets/warning-icon.svg" alt=""
+                                    class="warning-icon" style="width: 30px;">This is a warning message</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="snackbar success"><img
+                                    src="/HTML Training Assignment/images/Assigment_Assets/success-icon.svg" alt=""
+                                    class="success-icon" style="width: 30px;">This is a Success message</div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold fs-5">Call to action</label><br>
+                        <button class="btn btn-danger me-2 Primary">Primary</button>
+                        <button class="btn btn-outline-danger Secondary">Secondary</button>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div>
+                        <label class="form-label fw-semibold fs-5">Tabs</label>
+                        <ul class="nav nav-tabs mt-2">
+                            <li class="nav-item">
+                                <a class="nav-link active"  data-bs-toggle="tab" href="#tab1">Tab 1</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " data-bs-toggle="tab" href="#tab2">Tab 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab3">Tab 3</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content p-3 border border-top-0">
+                            <div class="tab-pane fade show active " id="tab1">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                            </div>
+                            <div class="tab-pane fade" id="tab2">
+                                Content for Tab 2
+                            </div>
+                            <div class="tab-pane fade" id="tab3">
+                                Content for Tab 3
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                        placeholder="Multiple line"></textarea>
-                </div>
-                
-
-
-
 
             </div>
-        </body>
-        </html>
+        </div>
+    </div>
+
+</body>
+
+</html>
