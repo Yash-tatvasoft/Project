@@ -42,16 +42,25 @@ body {
     color: #3E3E3E !important;
 }
 
+
 .form-control {
     width: 80%;
     height: 49px;
-    border: 1px solid #ADADAD;
+    border: 2px solid #ADADAD;
     border-radius: 5px;
     color: #ADADAD;
 }
 
 .login-button {
     width: 80%;
+
+}
+
+.btn-login:hover {
+    background-color: #14b3c4;
+   
+    color: blockquote;
+    
 }
 
 .forgot-text a {
@@ -62,6 +71,7 @@ body {
 .btn-login {
     width: 35%;
     background: #C8242F;
+
 }
 
 .register-link {
@@ -76,14 +86,16 @@ body {
 }
 
 
+
+
 /* Responsiveness */
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
     .row {
         /* max-height: %; */
     }
 
- 
+
     /* Right Portion */
     .login-card {
         padding-left: 15%;
@@ -125,6 +137,7 @@ body {
         font-size: small;
     }
 }
+
 /* .form-control:focus,
 .form-control:focus{
     border-color: red;
