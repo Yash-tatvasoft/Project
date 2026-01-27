@@ -9,8 +9,8 @@
 }
 
 #main-back {
-    background-color: rgba(218, 213, 213, 0);
-
+    background-color: #FAFAFA;
+    min-height: 100vh;
 }
 
 .box {
@@ -22,40 +22,595 @@
 }
 
 .form-check-input:checked[type="radio"] {
-
-    
     border-color: red;
     accent-color: red;
     fill: red;
 }
 
 .form-check-input:checked[type="checkbox"] {
-
     background-color: red;
     border-color: red;
-    fill:red;
-
+    fill: red;
 }
 
 .nav-tabs .nav-link.active {
     color: red;
     border-bottom: 2px solid red
-
 }
-
-
 
 @media (min-width: 991px) {
     .sidebar-button {
-
         cursor: not-allowed;
         pointer-events: none;
     }
 }
 
 .form-control:focus,
-.form-control:focus{
+.form-control:focus {
     border-color: red;
     box-shadow: none;
-    
+}
+
+/* Floating Label Styles */
+.floating-label-group {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.floating-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.custom-radio-red:checked[type="radio"] {
+    accent-color: #C8242F;
+    /* matches your CSS error and focus color */
+}
+
+.floating-input:focus {
+    border-color: #C8242F;
+    box-shadow: 0 0 0 0.2rem rgba(200, 36, 47, 0.1);
+}
+
+.floating-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ADADAD;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #FFFFFF;
+    padding: 0 5px;
+    z-index: 1;
+}
+
+.floating-label.active {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #ADADAD;
+}
+
+.floating-label-group.focused .floating-label,
+.floating-label.focused {
+    color: #C8242F;
+    font-size: 12px;
+}
+
+.floating-label-group.focused .floating-input {
+    border-color: #C8242F;
+}
+
+/* Error State */
+.floating-label-group.error-state .floating-input {
+    border-color: #C8242F;
+}
+
+.floating-label-group.error-state .floating-label.error {
+    color: #C8242F;
+}
+
+.error-message {
+    display: block;
+    color: #C8242F;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.help-text {
+    display: block;
+    color: #ADADAD;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+/* Select Styling */
+.floating-label-group select.floating-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+.floating-label-group select.floating-input:focus {
+    border-color: #C8242F;
+    box-shadow: 0 0 0 0.2rem rgba(200, 36, 47, 0.1);
+}
+
+/* Textarea Styling */
+.floating-label-group textarea.floating-input {
+    min-height: 100px;
+    resize: vertical;
+    padding-top: 20px;
+}
+
+.floating-label-group textarea.floating-input+.floating-label {
+    top: 20px;
+    transform: none;
+}
+
+.floating-label-group textarea.floating-input+.floating-label.active {
+    top: 0;
+    transform: translateY(-50%);
+}
+
+/* Disabled Input */
+.floating-input:disabled {
+    background-color: #F5F5F5;
+    border: 1px dashed #CCCCCC;
+    cursor: not-allowed;
+}
+
+.floating-input:disabled+.floating-label {
+    color: #ADADAD;
+}
+
+/* Form Select Styling */
+.form-select {
+    border: 1px solid #E0E0E0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #C8242F;
+    box-shadow: 0 0 0 0.2rem rgba(200, 36, 47, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .floating-label {
+        font-size: 13px;
+    }
+
+    .floating-label.active {
+        font-size: 11px;
+    }
+
+    .floating-input {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    padding: 20px 30px;
+}
+
+.dashboard-title h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Summary Cards */
+.summary-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.summary-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+.card-label {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Chart Containers */
+.chart-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.chart-period {
+    display: flex;
+    gap: 10px;
+}
+
+.period-link {
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #ADADAD;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.period-link:hover {
+    color: #C8242F;
+}
+
+.period-link.active {
+    color: #C8242F;
+    font-weight: 600;
+}
+
+.chart-content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.chart-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Donut Chart */
+.donut-chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.donut-chart {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.legend-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Invoices Container */
+.invoices-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.invoices-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.invoices-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.view-all-link {
+    color: #C8242F;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+
+.view-all-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Invoices Table */
+.invoices-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.invoices-table thead {
+    background-color: transparent;
+}
+
+.invoices-table thead th {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ADADAD;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border-bottom: 1px solid #E5E5E5;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.invoices-table tbody tr {
+    border-bottom: 1px solid #F5F5F5;
+    transition: background-color 0.2s ease;
+}
+
+.invoices-table tbody tr:hover {
+    background-color: #FAFAFA;
+}
+
+.invoices-table tbody td {
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.status-paid {
+    color: #28A745;
+    background-color: transparent;
+}
+
+.status-failed {
+    color: #DC3545;
+    background-color: transparent;
+}
+
+.status-pending {
+    color: #FFC107;
+    background-color: transparent;
+}
+
+@media (max-width: 991px) {
+    .dashboard-title {
+        padding: 15px 20px;
+    }
+
+    .dashboard-title h1 {
+        font-size: 24px;
+
+    }
+
+}
+
+.summary-card {
+    padding: 15px;
+
+    .card-value {
+        font-size: 20px;
+
+    }
+
+    .chart-container {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .chart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+    }
+
+    .chart-period {
+
+        width: 100%;
+
+        justify-content: flex-start;
+
+        .invoices-container {
+            padding: 20px;
+
+        }
+
+    }
+
+    .invoices-table {
+        font-size: 12px;
+
+        .invoices-table thead th,
+        .invoices-table tbody td {
+            padding: 10px 8px;
+            font-size: 12px;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .dashboard-title {
+            padding: 15px;
+
+        }
+
+    }
+
+    .summary-card {
+        padding: 12px;
+        gap: 10px;
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+
+        }
+
+    }
+
+    .card-icon img {
+        width: 30px;
+        height: 30px;
+
+        .card-value {
+            font-size: 18px;
+
+            .card-label {
+                font-size: 12px;
+
+            }
+
+        }
+
+    }
+
+}
+
+.chart-container {
+    padding: 15px;
+
+    .chart-title {
+        font-size: 18px;
+
+    }
+
+    .invoices-container {
+        padding: 15px;
+        overflow-x: auto;
+
+        .invoices-table {
+            min-width: 600px;
+        }
+
+        .invoices-table thead th,
+        .invoices-table tbody td {
+            padding: 8px 6px;
+            font-size: 11px;
+        }
+    }
+
+    .status-badge {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575px) {
+    .chart-period {
+        flex-wrap: wrap;
+
+    }
+
+    .period-link {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .donut-chart {
+        max-width: 200px;
+    }
+
+    .legend-text {
+        font-size: 12px;
+    }
+
+}
+
+.period-link {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.donut-chart {
+    max-width: 200px;
+}
+
+.legend-text {
+    font-size: 12px;
 }

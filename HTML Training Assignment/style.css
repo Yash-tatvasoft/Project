@@ -1,48 +1,49 @@
-* {
+style.css
+ {
     transition: all 0.5s;
 }
-
+ 
 body {
     margin: 0%;
     padding: 0%;
     width: 100%;
     height: 100vh;
 }
-
-
+ 
+ 
 /* Left Portion */
 .main_img {
     border-radius: 50%;
     border: 20px solid #FFFFFF;
     box-shadow: 0px 4px 31px #0000000A;
 }
-
-
-
+ 
+ 
+ 
 /* Right Portion */
 .login-card {
     padding-left: 10%;
 }
-
+ 
 .login-card img {
     /* height: 1%; */
     width: 50%;
 }
-
+ 
 .main-text {
     text-align: left;
     max-width: 100%;
     font: normal normal 300 40px/47px Roboto;
     color: #3E3E3E;
 }
-
+ 
 .login-text {
     text-align: left !important;
     font: normal normal normal 25px/33px Roboto !important;
     color: #3E3E3E !important;
 }
-
-
+ 
+ 
 .form-control {
     width: 80%;
     height: 49px;
@@ -50,70 +51,70 @@ body {
     border-radius: 5px;
     color: #ADADAD;
 }
-
+ 
 .login-button {
     width: 80%;
-
+ 
 }
-
+ 
 .btn-login:hover {
     background-color: #14b3c4;
    
     color: blockquote;
     
 }
-
+ 
 .forgot-text a {
     text-decoration: none;
     color: #ADADAD;
 }
-
+ 
 .btn-login {
     width: 35%;
     background: #C8242F;
-
+ 
 }
-
+ 
 .register-link {
     margin-top: 3%;
     width: 80%;
     color: #ADADAD;
 }
-
+ 
 .register-link a {
     text-decoration: none;
     color: #C8242F;
 }
-
-
-
-
+ 
+ 
+ 
+ 
 /* Responsiveness */
-
+ 
 @media (min-width: 768px) and (max-width: 1023px) {
     .row {
         /* max-height: %; */
     }
-
-
+ 
+ 
     /* Right Portion */
     .login-card {
         padding-left: 15%;
     }
-
+ 
     .main-text {
         text-align: left;
         max-width: 100%;
         font: normal normal 300 30px/37px Roboto;
         color: #3E3E3E;
     }
-
+ 
     .login-text {
         text-align: left !important;
         font: normal normal normal 20px/25px Roboto !important;
         color: #3E3E3E !important;
     }
-
+ 
     .form-control {
         width: 80%;
         height: 40px;
@@ -121,15 +122,15 @@ body {
         border-radius: 5px;
         color: #ADADAD;
     }
-
+ 
     .forgot-text {
         font: normal normal normal 12px/20px Roboto;
     }
-
+ 
     .login-button {
         width: 80%;
     }
-
+ 
     .register-link {
         margin-top: 3%;
         width: 100%;
@@ -137,15 +138,16 @@ body {
         font-size: small;
     }
 }
-
+ 
 /* .form-control:focus,
 .form-control:focus{
     border-color: red;
     box-shadow: none;
 } */
-
+ 
 /* @media (max-width: 576px) {
     .login-card {
         padding-left: 15%;
     }
 } */
+ 
